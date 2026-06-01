@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Sustentável</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            line-height:1.6;
+            color:#333;
+        }
+
+        header{
+            background: linear-gradient(rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)),
+            url('https://images.unsplash.com/photo-1509391366360-2e959784a276');
+            background-size:cover;
+            background-position:center;
+            height:100vh;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+
+        header h1{
+            font-size:4rem;
+        }
+
+        header p{
+            font-size:1.3rem;
+            margin:20px 0;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#2ecc71;
+            color:white;
+            padding:12px 25px;
+            text-decoration:none;
+            border-radius:30px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#27ae60;
+        }
+
+        nav{
+            background:#145a32;
+            padding:15px;
+            position:sticky;
+            top:0;
+        }
+
+        nav ul{
+            display:flex;
+            justify-content:center;
+            list-style:none;
+            gap:25px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        section{
+            padding:70px 10%;
+        }
+
+        .titulo{
+            text-align:center;
+            margin-bottom:40px;
+            color:#145a32;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:#f4f4f4;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+            text-align:center;
+        }
+
+        .card h3{
+            color:#27ae60;
+            margin-bottom:15px;
+        }
+
+        .beneficios{
+            background:#eafaf1;
+        }
+
+        .contato{
+            text-align:center;
+        }
+
+        form{
+            max-width:500px;
+            margin:auto;
+        }
+
+        input, textarea{
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            border:1px solid #ccc;
+            border-radius:8px;
+        }
+
+        button{
+            background:#27ae60;
+            color:white;
+            border:none;
+            padding:12px 25px;
+            border-radius:8px;
+            cursor:pointer;
+        }
+
+        footer{
+            background:#145a32;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        @media(max-width:768px){
+            header h1{
+                font-size:2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>Energia Sustentável</h1>
+        <p>Construindo um futuro mais limpo e eficiente para todos.</p>
+        <a href="#sobre" class="btn">Saiba Mais</a>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#fontes">Fontes</a></li>
+        <li><a href="#beneficios">Benefícios</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+
+<section id="sobre">
+    <h2 class="titulo">O que é Energia Sustentável?</h2>
+    <p>
+        Energia sustentável é aquela produzida por fontes renováveis,
+        com baixo impacto ambiental e capacidade de atender às necessidades
+        atuais sem comprometer as futuras gerações.
+    </p>
+</section>
+
+<section id="fontes">
+    <h2 class="titulo">Principais Fontes</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>☀️ Energia Solar</h3>
+            <p>Obtida a partir da luz do sol por meio de painéis fotovoltaicos.</p>
+        </div>
+
+        <div class="card">
+            <h3>💨 Energia Eólica</h3>
+            <p>Produzida pela força dos ventos utilizando aerogeradores.</p>
+        </div>
+
+        <div class="card">
+            <h3>💧 Energia Hidrelétrica</h3>
+            <p>Gerada pelo movimento da água em rios e barragens.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌱 Biomassa</h3>
+            <p>Produzida a partir de resíduos orgânicos e vegetais.</p>
+        </div>
+    </div>
+</section>
+
+<section id="beneficios" class="beneficios">
+    <h2 class="titulo">Benefícios</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🌍 Menos Poluição</h3>
+            <p>Redução significativa da emissão de gases do efeito estufa.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔋 Eficiência Energética</h3>
+            <p>Melhor aproveitamento dos recursos naturais.</p>
+        </div>
+
+        <div class="card">
+            <h3>💰 Economia</h3>
+            <p>Redução de custos a longo prazo para residências e empresas.</p>
+        </div>
+
+        <div class="card">
+            <h3>♻️ Sustentabilidade</h3>
+            <p>Preservação ambiental para as próximas gerações.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contato" class="contato">
+    <h2 class="titulo">Entre em Contato</h2>
+
+    <form>
+        <input type="text" placeholder="Seu nome" required>
+
+        <input type="email" placeholder="Seu e-mail" required>
+
+        <textarea rows="5" placeholder="Sua mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Energia Sustentável | Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
